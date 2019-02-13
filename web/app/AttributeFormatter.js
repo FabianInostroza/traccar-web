@@ -295,7 +295,7 @@ Ext.define('Traccar.AttributeFormatter', {
 
     renderAttribute: function (value, attribute) {
         if (attribute && attribute.get('dataType') === 'speed') {
-            return Ext.getStore('SpeedUnits').formatValue(value, Traccar.app.getAttributePreference('speedUnit', 'kn'), true);
+            return Ext.getStore('SpeedUnits').formatValue(value, Traccar.app.getAttributePreference('speedUnit', 'kmh'), true);
         } else if (attribute && attribute.get('dataType') === 'distance') {
             return Ext.getStore('DistanceUnits').formatValue(value, Traccar.app.getAttributePreference('distanceUnit', 'km'), true);
         } else if (attribute && attribute.get('dataType') === 'hours') {

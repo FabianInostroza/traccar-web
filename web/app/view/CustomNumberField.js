@@ -33,7 +33,7 @@ Ext.define('Traccar.view.CustomNumberField', {
                         return Ext.getStore('SpeedUnits');
                     };
                     config.units.getValue = function () {
-                        return Traccar.app.getAttributePreference('speedUnit', 'kn');
+                        return Traccar.app.getAttributePreference('speedUnit', 'kmh');
                     };
                     unitName = Ext.getStore('SpeedUnits').findRecord('key', config.units.getValue()).get('name');
                     break;
